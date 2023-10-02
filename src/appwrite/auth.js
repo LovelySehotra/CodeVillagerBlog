@@ -1,6 +1,7 @@
 import conf from "../conf/conf";
 
 import { Client, Account, ID } from "appwrite";
+import { AppwriteException } from 'appwrite';
 
 export class AuthService{
     client = new Client();
@@ -33,12 +34,20 @@ export class AuthService{
             throw error;
         }
     }
-    async getCurrentUser(){
+    async getCurrentUser() {
         try {
-            return await this.account.get();        
+            return await this.account.get();
         } catch (error) {
-            console.log("Appwrite serive :: getCurrentUser :: error", error);
+            if (error instanceof AppwriteException) {
+                console.error('Appwrite Error:', error.message, error.code);
+                // Handle the error appropriately, e.g., show an error message to the user
+              } else {
+                console.error('Unexpected Error:', error);
+                // Handle other unexpected errors
+              }
         }
+
+        return null;
     }
     async logout(){
         try {

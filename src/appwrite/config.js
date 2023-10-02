@@ -34,7 +34,7 @@ export class Service {
         }
 
     }
-    async updatePost({ title, slug, content, featuredImage, status, }) {
+    async updatePost(slug, { title, content, featuredImage, status }) {
         try {
             return await this.databases.updateDocument(
 
@@ -46,7 +46,7 @@ export class Service {
                     content,
                     featuredImage,
                     status,
-                  
+
                 }
             )
         } catch (error) {
@@ -54,15 +54,15 @@ export class Service {
         }
 
     }
-    async deletePost( slug) {
+    async deletePost(slug) {
         try {
-            return await this.databases.deleteDocument(
+             await this.databases.deleteDocument(
 
                 conf.appwriteDatabaseId,
                 conf.appwriteCollectionId,
                 slug,
-                
-                
+
+
             )
             return true;
         } catch (error) {
@@ -71,20 +71,20 @@ export class Service {
         }
 
     }
-    async getPost(slug){
+    async getPost(slug) {
         try {
             return await this.databases.getDocument(
                 conf.appwriteDatabaseId,
                 conf.appwriteCollectionId,
                 slug
-            
+
             )
         } catch (error) {
             console.log("Appwrite serive :: getPost :: error", error);
             return false
         }
     }
-    async getPosts(queries=[Query.equal("status","active")]){
+    async getPosts(queries = [Query.equal("status", "active")]) {
         try {
             return await this.databases.listDocuments(
                 conf.appwriteDatabaseId,
@@ -98,7 +98,7 @@ export class Service {
     }
 
     // file upload 
-    async uploadFile(file){
+    async uploadFile(file) {
         try {
             return await this.bucket.createFile(
                 conf.appwriteBucketId,
@@ -110,7 +110,7 @@ export class Service {
             return false
         }
     }
-    async deleteFile(fileId){
+    async deleteFile(fileId) {
         try {
             await this.bucket.deleteFile(
                 conf.appwriteBucketId,
@@ -122,7 +122,7 @@ export class Service {
             return false
         }
     }
-    getFilePreview(fileId){
+    getFilePreview(fileId) {
         return this.bucket.getFilePreview(
             conf.appwriteBucketId,
             fileId
