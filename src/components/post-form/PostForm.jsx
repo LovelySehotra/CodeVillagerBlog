@@ -32,42 +32,42 @@ export default function PostForm({ post }) {
             });
             if (dbPost) {
                 navigate(`/post/${dbPost.$id}`);
-            } else {
-                const file = await appwriteService.uploadFile(data.image[0]);
-                if (file) {
-                    const fileId = file.$id;
-                    data.featuredImage = fileId;
-                    const dbPost = await appwriteService.createPost({ ...data, userId: userData.$id });
+            } 
+        }else {
+            const file = await appwriteService.uploadFile(data.image[0]);
+            if (file) {
+                const fileId = file.$id;
+                data.featuredImage = fileId;
+                const dbPost = await appwriteService.createPost({ ...data, userId: userData.$id });
 
-                    if (dbPost) {
-                        navigate(`/post/${dbPost.$id}`);
-                    }
+                if (dbPost) {
+                    navigate(`/post/${dbPost.$id}`);
                 }
             }
-        };
+        }
     }
-        const slugTransform = useCallback((value) => {
-            if (value && typeof value === "string")
-                return value
-                    .trim()
-                    .toLowerCase()
-                    .replace(/[^a-zA-Z\d\s]+/g, "-")
-                    .replace(/\s/g, "-");
+    const slugTransform = useCallback((value) => {
+        if (value && typeof value === "string")
+            return value
+                .trim()
+                .toLowerCase()
+                .replace(/[^a-zA-Z\d\s]+/g, "-")
+                .replace(/\s/g, "-");
 
-            return "";
-        }, []);
-        React.useEffect(() => {
-            const subscription = watch((value, { name }) => {
-                if (name === "title") {
-                    setValue("slug", slugTransform(value.title), { shouldValidate: true });
-                }
-            });
+        return "";
+    }, []);
+    React.useEffect(() => {
+        const subscription = watch((value, { name }) => {
+            if (name === "title") {
+                setValue("slug", slugTransform(value.title), { shouldValidate: true });
+            }
+        });
 
-            return () => subscription.unsubscribe();
-        }, [watch, slugTransform, setValue]);
-    
+        return () => subscription.unsubscribe();
+    }, [watch, slugTransform, setValue]);
+
     return (
-        <form onSubmit={handleSubmit(submit)} className="flex flex-wrap">
+        <form onSubmit={handleSubmit(submit)} className="flex flex-wrap h-screen">
             <div className="w-2/3 px-2">
                 <Input
                     label="Title :"
@@ -84,7 +84,7 @@ export default function PostForm({ post }) {
                         setValue("slug", slugTransform(e.currentTarget.value), { shouldValidate: true });
                     }}
                 />
-                <RTE label="Content :" name="content" control={control}/>
+                <RTE label="Content :" name="content" control={control} defaultValue={getValues("content")} />
                 {/* <RTE label="Content :" name="content" control={control} defaultValue={getValues("content")} /> */}
             </div>
             <div className="w-1/3 px-2">

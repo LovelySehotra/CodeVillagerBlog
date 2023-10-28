@@ -8,7 +8,7 @@ function Footer() {
   return (
 
     <>
-    <footer className='h-[10vh] flex flex-col sm:flex-row items-center justify-between text-white bg-gray-800 sm:px-20'>
+    <footer className='h-[10vh] flex flex-col sm:flex-row items-center justify-between text-white bg-gray-800 sm:px-20 rounded-lg border border-red-400 '>
       <section className='text-lg'>
         Copyrigth {year}| All right reserved
       </section>

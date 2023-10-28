@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import appwriteService from "../appwrite/config";
 import {Container, PostCard} from '../components'
+import backgroundVideo from "../assets/bgvideo.mp4"
 
 function Home(){
     const [posts, setPosts] = useState([]) 
@@ -13,15 +14,20 @@ function Home(){
     }, [])
     if (posts.length === 0) {
         return (
-            <div className="w-full py-8 mt-4 text-center">
+            <div className="w-full  text-center">
                 <Container>
-                    <div className="flex flex-wrap">
-                        <div className="p-2 w-full">
-                            <h1 className="text-2xl font-bold hover:text-gray-500">
-                                Login to read posts
-                            </h1>
-                        </div>
+                    <div className=''>
+                    <video autoPlay loop muted id='video'>
+                        <source src={backgroundVideo} type='video/mp4'/>
+                      
+                      </video>
                     </div>
+                    <div className='h-48 bg-black text-red-700 pt-20'>
+                   Comming Soon
+                    </div>
+                   
+                    
+                    
                 </Container>
             </div>
         )
