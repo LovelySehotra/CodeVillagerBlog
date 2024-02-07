@@ -1,0 +1,28 @@
+.header{
+    background-color:white;
+    inline-size: 95vw;
+    margin-inline: auto;
+    max-inline-size: 1280px;
+    
+}
+.nav{
+    block-size: 50px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.nav-item{
+    block-size: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr  1fr 1fr 1fr;
+    border: none;
+    
+    
+}
+.nav-item li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.border li:not(:first-of-type ){
+    border-left: 1px solid black;
+}

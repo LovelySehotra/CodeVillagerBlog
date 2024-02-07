@@ -24,13 +24,13 @@ function App() {
   }, [])
   
   return !loading ? (
-    <div className=' flex flex-wrap content-between bg-gray-400 max-h-full'>
+    <div className=' flex flex-wrap content-between bg-white max-h-full'>
       <div className='w-full  flex flex-col justify-between h-screen '>
         <Header />
         
-         <Outlet />
+         {/* <Outlet /> */}
        
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </div>
   ) : null
