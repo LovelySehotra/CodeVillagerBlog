@@ -47,7 +47,10 @@ function Header() {
     return (
         <header className='header'>
             <Container>
+                <h2 className='subheading'>EVERYTHING IS PERSONAL. INCLUDING THIS BLOG.</h2>
+                <h1 className='title'>x-E-cute</h1>
                 <nav className='nav'>
+
                 <ul className='nav-item border'>
                         {navItems.map((item) =>
                             item.active ? (
