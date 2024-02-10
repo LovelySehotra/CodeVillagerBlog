@@ -1,0 +1,40 @@
+.blog-detail {
+  display: flex;
+  text-align: start;
+  /* background-color: aqua; */
+  inline-size: 55vw;
+  max-inline-size: 575px;
+  /* block-size: max-content; */
+  max-block-size: 350px;
+  border: 1px solid black;
+  font-weight: 300;
+}
+.blog-detail .img {
+  background-color: antiquewhite;
+  inline-size: 100%;
+}
+.blog-detail img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.blog-detail .blog-content {
+  
+  padding: 2rem;
+  display: grid;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.blog-content span {
+  display: flex;
+  gap: 10px;
+  font-size: smaller;
+  font-weight: 300;
+}
+.blog-content h3 {
+  font-size: x-large;
+  font-weight: 700;
+  margin-block-end: 0.5rem;
+  cursor: pointer;
+}

@@ -1,0 +1,33 @@
+.homepage{
+    inline-size: 90vw;
+    max-inline-size: 1280px;
+    margin-inline: auto;
+}
+.break-line{
+    inline-size: 90vw;
+    max-inline-size: 1280px;
+    margin-inline: auto;
+    margin: 1rem;
+    border-top: 1px solid black;
+
+}
+.break-line-verticle{
+    inline-size: 100%;
+    /* max-inline-size: 1280px; */
+    margin-inline: auto;
+    margin: 1rem;
+    border-top: 1px solid black;
+    rotate: 90deg;
+    
+}
+.blogcard-section{
+    inline-size: 90vw;
+    max-inline-size: 1280px;
+    margin-inline: auto;
+    background-color: antiquewhite;
+    display: flex;
+}
+.blogcard h4{
+    font-size: xx-large;
+    font-weight: 400;
+}
