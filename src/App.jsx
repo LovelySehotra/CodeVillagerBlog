@@ -28,7 +28,7 @@ function App() {
       <div className='w-full  flex flex-col justify-between h-screen '>
         <Header />
         
-         {/* <Outlet /> */}
+         <Outlet />
        
         {/* <Footer /> */}
       </div>

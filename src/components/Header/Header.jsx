@@ -52,6 +52,7 @@ function Header() {
                 <nav className='nav'>
 
                 <ul className='nav-item border'>
+                    <li><a href=""> </a></li>
                         {navItems.map((item) =>
                             item.active ? (
                             <li className='' key={item.name}>
@@ -60,7 +61,7 @@ function Header() {
                             </li>
                             ) : null
                         )}
-                        
+                        <li><a href=""></a></li>
                     </ul>
                 </nav>
             </Container>

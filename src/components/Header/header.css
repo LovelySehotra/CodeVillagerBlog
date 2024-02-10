@@ -1,16 +1,18 @@
+
 .header{
     background-color:white;
     inline-size: 95vw;
     margin-inline: auto;
     max-inline-size: 1280px;
     padding-block-start: 3vh;
+    font-family: monospace;
     
 }
 .title{
     text-align: center;
     font-weight: bolder;
     font-size: 60px;
-    margin-block: 4vh;
+    margin-block: 3vh;
 }
 .subheading{
     text-align: center;
@@ -26,7 +28,7 @@
 .nav-item{
     block-size: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr  1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr  1fr 1fr 1fr 1fr 1fr ;
     border: none;
     
     
