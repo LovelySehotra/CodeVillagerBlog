@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate, Link } from 'react-router-dom';
-import {Container,Logo,LogoutBtn} from "../index"
+import { Container, Logo, LogoutBtn } from "../index"
 import { useSelector } from 'react-redux';
 import "./header.css"
 
@@ -51,14 +51,14 @@ function Header() {
                 <h1 className='title'>x-E-cute</h1>
                 <nav className='nav'>
 
-                <ul className='nav-item border'>
-                    <li><a href=""> </a></li>
+                    <ul className='nav-item border'>
+                        <li><a href=""> </a></li>
                         {navItems.map((item) =>
                             item.active ? (
-                            <li className='' key={item.name}>
-                                <a href={`${item.slug}`}>{item.name} </a>
-                               
-                            </li>
+                                <li className='' key={item.name}>
+                                    <a href={`${item.slug}`}>{item.name} </a>
+
+                                </li>
                             ) : null
                         )}
                         <li><a href=""></a></li>
@@ -73,7 +73,7 @@ function Header() {
         //             <div className='flex gap-2 mr-4 items-center hover:text-red-600 transition-all ease-in-out duration-300'>
         //                 <Link to='/'>
         //                     <Logo width='70px' />
-                            
+
         //                 </Link>
         //                 <span className='text-red-400'>CodeVillagers</span>
         //             </div>

@@ -1,33 +1,35 @@
-.homepage{
-    inline-size: 90vw;
-    max-inline-size: 1280px;
-    margin-inline: auto;
+.homepage {
+  inline-size: 100%;
+  scroll-behavior: smooth;
 }
-.break-line{
-    inline-size: 90vw;
-    max-inline-size: 1280px;
-    margin-inline: auto;
-    margin: 1rem;
-    border-top: 1px solid black;
+.break-line {
+  margin-block: 1rem;
+  border-top: 1px solid black;
+}
+.break-line-verticle {
+  inline-size: 500px;
+  border-top: 1px solid black;
+  rotate: 90deg;
+}
+.blogcard-section {
+  inline-size: 90vw;
+  max-inline-size: 1280px;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+}
+.blogcard{
 
+    display: grid;
+    gap: 4rem;
 }
-.break-line-verticle{
-    inline-size: 100%;
-    /* max-inline-size: 1280px; */
-    margin-inline: auto;
-    margin: 1rem;
-    border-top: 1px solid black;
-    rotate: 90deg;
-    
+.blogcard h4 {
+  font-size: xx-large;
+  font-weight: 400;
+  padding-block-start:3rem;
 }
-.blogcard-section{
-    inline-size: 90vw;
-    max-inline-size: 1280px;
-    margin-inline: auto;
-    background-color: antiquewhite;
-    display: flex;
-}
-.blogcard h4{
-    font-size: xx-large;
-    font-weight: 400;
+.about {
+  border-left: 1px solid black;
+  padding-inline: 5vw;
+  /* padding-block-start: 2rem; */
 }

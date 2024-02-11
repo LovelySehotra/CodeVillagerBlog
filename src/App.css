@@ -1,0 +1,6 @@
+.layout{
+    inline-size: 90vw;
+    max-inline-size: 1280px;
+    margin-inline:auto ;
+    /* background-color: aqua; */
+}

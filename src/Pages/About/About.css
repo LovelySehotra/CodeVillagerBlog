@@ -1,0 +1,17 @@
+.about-component{
+    padding-inline: 2rem;
+    inline-size: 100%;
+    margin-inline: auto;
+    font-weight: 300;
+}
+.about-article img{
+    inline-size: 250px;
+}
+.about-article h4{
+    font-size: xx-large;
+    font-weight: 400;
+    padding-block: 3rem;
+}
+.about-article p{
+    margin-block: 2rem;
+}

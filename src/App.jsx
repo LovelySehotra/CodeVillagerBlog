@@ -24,15 +24,15 @@ function App() {
   }, [])
   
   return !loading ? (
-    <div className=' flex flex-wrap content-between bg-white max-h-full'>
-      <div className='w-full  flex flex-col justify-between h-screen '>
+   
+      <div className='layout'>
         <Header />
         
          <Outlet />
        
         {/* <Footer /> */}
       </div>
-    </div>
+   
   ) : null
 }
 

@@ -5,6 +5,7 @@
     block-size: max-content ;
     max-inline-size: 800px;
     margin-inline: auto;
+    margin-block: 6rem;
     text-align: start;
     position: relative;
     border:1px solid black;

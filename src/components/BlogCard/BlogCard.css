@@ -1,11 +1,9 @@
 .blog-detail {
   display: flex;
   text-align: start;
-  /* background-color: aqua; */
   inline-size: 55vw;
   max-inline-size: 575px;
-  /* block-size: max-content; */
-  max-block-size: 350px;
+  block-size: 350px;
   border: 1px solid black;
   font-weight: 300;
 }
