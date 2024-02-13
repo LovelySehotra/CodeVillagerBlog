@@ -1,3 +1,4 @@
+
 .header {
   background-color: white;
   inline-size: 95vw;
@@ -5,6 +6,7 @@
   max-inline-size: 1280px;
   padding-block-start: 3vh;
   font-family: monospace;
+  display: grid;
 }
 .title {
   text-align: center;
@@ -43,43 +45,30 @@
   clear: none;
   max-height: none;
 }
-@media screen and (width<=700px) {
-  .nav {
-    block-size: 100%;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    
+.nav .menu {
+    clear: both; 
+     transition: max-height 0.2s ease-out;
   }
-  /* .nav ul { */
-  /* margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: visible;
-  background-color: #fff;
-} */
-  /* .nav li a {
-    display: block;
-    padding: 20px 20px;
-    border-right: 1px solid #f4f4f4;
-    text-decoration: none;
-  } */
-  /* .nav li a:hover,
-.nav .menu-btn:hover{
-    background-color: aqua;
-} */
-  .nav .menu {
-    clear: both;
-    /* max-height: 0; */
-    transition: max-height 0.2s ease-out;
-  }
+@media screen and (width<=500px) {
+    .title {
+        order: 2;
+    }
+    .subheading{
+        order: 3;
+    }
+    .nav{
+        order: 1;
+    }
   .nav .menu-icon {
     cursor: pointer;
     float: right;
     display: block;
-    padding: 28px 20px;
+    padding: 20px 20px;
     position: relative;
     user-select: none;
-    background-color: aqua;
+    inset-inline-end: 0;
+    inset-block-start: 0;
+    z-index: 11;
   }
   .nav .menu-icon .navicon {
     background: #333;
@@ -102,23 +91,40 @@
   .nav .menu-icon .navicon:before {
     top: 5px;
   }
-
   .nav .menu-icon .navicon:after {
     top: -5px;
   }
-
-  /* menu btn */
-
+.menu {
+    translate: 100%;
+}
   .nav .menu-btn:checked ~ .menu {
-    block-size: 100vh;
-    position: static;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+        position: fixed;
+        inset-inline-end: 0;
+        inset-block-start: 0;
+        z-index: 10;
+        block-size: 100vh;
+        padding-block-start: 70px;
+        inline-size: 500px;
+        translate: 0% 0%;
+        max-inline-size: 100%;
+        background-color: white;
+        inset-inline-start: 0;
+        inset-block-start: 0;
+        -webkit-transition: translate 0.3s ease-in;
+        -moz-transition: translate 0.3s ease-in;
+        -o-transition: translate 0.3s ease-in;
+        transition: translate 0.3s ease-in;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: large;
+        font-weight: 900;    
   }
   .nav .menu-btn:checked ~ .nav{
     overflow: hidden;
+  }
+  .nav .menu-btn:checked ~ body{
+        
   }
   .border li:not(:first-of-type) {
     border-left: none;
@@ -141,18 +147,4 @@
     top: 0;
   }
 }
-/* 48em = 768px */
 
-/* @media screen and (width>=700px) {
-    
-    .nav li {
-      float: left;
-    }
-    .nav li a {
-      padding: 20px 30px;
-    }
-    
-    .nav .menu-icon {
-      display: none;
-    }
-  } */

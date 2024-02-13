@@ -45,28 +45,28 @@ function Header() {
         }
     ]
     return (
-            <Container>
-        <header className='header'>
-            <h2 className='subheading'>EVERYTHING IS PERSONAL. INCLUDING THIS BLOG.</h2>
-            <h1 className='title'>x-E-cute</h1>
-            <nav className='nav'>
-                <input class="menu-btn" type="checkbox" id="menu-btn" />
-                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-                <ul class="menu nav-item border">
-                <li><a href=""> </a></li>
-                    {navItems.map((item) =>
-                        item.active ? (
-                            <li key={item.name}>
-                            <a href={`${item.slug}`}>{item.name} </a>
-                            
-                            </li>
-                            ) : null
-                    )}
-                    <li><a href=""></a></li>
-                    </ul>
-            </nav>
+        <Container>
+            <header className='header'>
+                <h2 className='subheading'>EVERYTHING IS PERSONAL. INCLUDING THIS BLOG.</h2>
+                <h1 className='title'>x-E-cute</h1>
+                <nav className='nav'>
+                    <input class="menu-btn" type="checkbox" id="menu-btn" />
+                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    <ul class="menu nav-item border">
+                        <li><a href=""> </a></li>
+                        {navItems.map((item) =>
+                            item.active ? (
+                                <li key={item.name}>
+                                    <a href={`${item.slug}`}>{item.name} </a>
 
-        </header>
+                                </li>
+                            ) : null
+                        )}
+                        <li><a href=""></a></li>
+                    </ul>
+                </nav>
+            </header>
+            
         </Container>
         // <header className='h-[10vh] flex flex-col sm:flex-row items-center justify-between text-white bg-gray-800 sm:px-20 rounded-lg border border-red-400'>
         //     <Container>
