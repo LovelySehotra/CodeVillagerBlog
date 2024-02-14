@@ -24,15 +24,40 @@
   justify-content: space-between;
   gap: 0.5rem;
 }
-.blog-content span {
+.blog-content .content-info {
   display: flex;
   gap: 10px;
   font-size: smaller;
   font-weight: 300;
 }
-.blog-content h3 {
+.blog-content .content-title {
   font-size: x-large;
   font-weight: 700;
   margin-block-end: 0.5rem;
   cursor: pointer;
+}
+.content-paragraph{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+@media screen and (width<=500px) {
+  .blog-detail {
+    display: flex;
+   flex-direction: column;
+   text-align: start;
+   inline-size: 100%;
+   max-inline-size: 500px;
+   block-size: max-content;
+   max-block-size: 500px;
+  }
+  .blog-content .content-title {
+    font-size: large;
+    font-weight: 700;
+    margin-block-end: 0.5rem;
+    cursor: pointer;
+  }
+  
 }

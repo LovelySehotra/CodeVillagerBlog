@@ -18,12 +18,10 @@
     inset-inline-start: -0.1%;
     block-size: 6%;
     padding-block: 5px;
-    background-color: #fff;
+    background-color: white;
     border:1px solid black;
     padding-inline: 2rem;
-    letter-spacing: 3px;
-    
-    
+    letter-spacing: 3px; 
 }
 .content{
     padding: 2rem;
@@ -46,13 +44,20 @@
     -webkit-box-orient: vertical;
 }
 @media screen and (width<500px) {
+    .featured-blog{
+        margin-block-start: 5rem;
+        inline-size:100%;
+        block-size: max-content ;
+    }
     .content h3{
         font-size: large;
         font-weight: 500;
     }
     .paragraph-content{ 
-        -webkit-line-clamp: 3;
-       
+        -webkit-line-clamp: 3; 
+    }
+    .featured-box-label{
+        padding-block: 0;  
     }
     
 }
