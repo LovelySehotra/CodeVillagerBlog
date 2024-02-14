@@ -2,5 +2,6 @@
     inline-size: 90vw;
     max-inline-size: 1280px;
     margin-inline:auto ;
+    overflow-x: hidden;
     /* background-color: aqua; */
 }
