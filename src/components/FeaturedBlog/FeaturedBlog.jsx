@@ -14,7 +14,7 @@ const FeaturedBlog = () => {
                             2 min</p>
                     </span>
                     <h3>Back to Fiction: What I'm Reading This Summer</h3>
-                    <p>
+                    <p className="paragraph-content">
                         Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....
                     </p>
                     </div>
