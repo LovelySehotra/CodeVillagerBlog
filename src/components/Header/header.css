@@ -57,13 +57,14 @@
     order: 3;
   }
   .nav {
+    position: relative;
     order: 1;
   }
   .nav .menu-icon {
     cursor: pointer;
     float: right;
     display: block;
-    padding: 20px 20px;
+    padding: 10px 5px;
     position: absolute;
     user-select: none;
     inset-inline-start: 0;
@@ -100,6 +101,7 @@
   }
   .nav .menu-btn:checked ~ .menu-icon {
     position: fixed;
+    padding: 20px 15px;
   }
   .nav .menu-btn:checked ~ .menu {
     position: fixed;
