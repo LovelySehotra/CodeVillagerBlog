@@ -10,7 +10,7 @@ const HomeLayout =({children})=>{
         {children}
          {/* <Outlet /> */}
        
-        <Footer />
+        {/* <Footer /> */}
       </div>
    
 

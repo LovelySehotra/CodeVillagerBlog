@@ -43,6 +43,16 @@
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
 }
+.secondary{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  inline-size: 48%;
+  block-size: max-content;
+  max-inline-size: 500px;
+  border: 1px solid black;
+  font-weight: 300;
+}
 @media screen and (width<=580px) {
   .blog-detail {
     display: flex;

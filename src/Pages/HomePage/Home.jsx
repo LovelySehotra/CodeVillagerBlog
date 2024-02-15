@@ -7,6 +7,7 @@ import BlogCard from '../../components/BlogCard/BlogCard';
 import "./Home.css"
 import About from '../About/About';
 import HomeLayout from '../../Layout/HomeLayout';
+import { Link } from 'react-router-dom';
 function Home() {
     const [posts, setPosts] = useState([])
     useEffect(() => {
@@ -27,10 +28,16 @@ function Home() {
                 <div className='blogcard-section'>
                     <div className='blogcard'>
                         <h4 className='blogcard-label'>X-E-CUTE</h4>
+                        <Link to="/blogs">
                         <BlogCard />
+                        </Link>
+                        <Link to="/blogs">
                         <BlogCard />
+                        </Link>
+                        <Link to="/blogs">
                         <BlogCard />
-                        <BlogCard /> <BlogCard />
+                        </Link>
+                        
                     </div>
 
                     <div className='about'>

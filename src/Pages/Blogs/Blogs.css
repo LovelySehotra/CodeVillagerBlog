@@ -1,0 +1,14 @@
+.blogs-section {
+  inline-size: 100%;
+  margin-block-start: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+}
+@media screen and (width<=580px) {
+  .blogs-section {
+    flex-direction: column;
+  }
+}
