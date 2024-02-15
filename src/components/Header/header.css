@@ -29,6 +29,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   border: none;
+  /* background-color: aqua; */
 }
 .menu li {
   display: flex;

@@ -5,7 +5,7 @@ import { Container, PostCard } from '../../components'
 import FeaturedBlog from '../../components/FeaturedBlog/FeaturedBlog';
 import BlogCard from '../../components/BlogCard/BlogCard';
 import "./Home.css"
-import About from '../About/About';
+import About from '../../components/About/About';
 import HomeLayout from '../../Layout/HomeLayout';
 import { Link } from 'react-router-dom';
 function Home() {
@@ -28,13 +28,13 @@ function Home() {
                 <div className='blogcard-section'>
                     <div className='blogcard'>
                         <h4 className='blogcard-label'>X-E-CUTE</h4>
-                        <Link to="/blogs">
+                        <Link to="/all-posts">
                         <BlogCard />
                         </Link>
-                        <Link to="/blogs">
+                        <Link to="/all-posts">
                         <BlogCard />
                         </Link>
-                        <Link to="/blogs">
+                        <Link to="/all-posts">
                         <BlogCard />
                         </Link>
                         

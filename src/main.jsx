@@ -27,23 +27,23 @@ const router = createBrowserRouter([
             path:"/",
             element: <Home/>,
           },
-          {
-            path:"/login",
-            element:(
-              <AuthLayout authentication={false}>
-                <Login/>
-                </AuthLayout>
-            ),
+          // {
+          //   path:"/login",
+          //   element:(
+          //     <AuthLayout authentication={false}>
+          //       <Login/>
+          //       </AuthLayout>
+          //   ),
 
-          },
-          {
-            path:"/signup",
-            element:(
-              <AuthLayout authentication={false}>
-                    <Signup/>
-                    </AuthLayout>
-            )
-          },
+          // },
+          // {
+          //   path:"/signup",
+          //   element:(
+          //     <AuthLayout authentication={false}>
+          //           <Signup/>
+          //           </AuthLayout>
+          //   )
+          // },
           {
             path:"/all-posts",
             element:(

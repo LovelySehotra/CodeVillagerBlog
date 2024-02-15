@@ -9,6 +9,8 @@ import { Outlet, Route, Routes } from 'react-router-dom'
 import { Editor } from '@tinymce/tinymce-react'
 import Blogs from './Pages/Blogs/Blogs'
 import Home from './Pages/HomePage/Home'
+import About from './components/About/About'
+import AboutPage from './Pages/AboutPage/AboutPage'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -30,7 +32,8 @@ function App() {
   return(
     <Routes>
       <Route path='/' element={<Home/>}/>
-      <Route path='/blogs' element={<Blogs/>}/>
+      <Route path='/all-posts' element={<Blogs/>}/>
+      <Route path='/about' element={<AboutPage/>}/>
 
     </Routes>
   )
