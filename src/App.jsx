@@ -5,7 +5,10 @@ import authService from "./appwrite/auth"
 import {login, logout} from "./store/authSlice"
 
 import { Footer, Header } from './components'
-import { Outlet } from 'react-router-dom'
+import { Outlet, Route, Routes } from 'react-router-dom'
+import { Editor } from '@tinymce/tinymce-react'
+import Blogs from './Pages/Blogs/Blogs'
+import Home from './Pages/HomePage/Home'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -23,17 +26,14 @@ function App() {
     .finally(() => setLoading(false))
   }, [])
   
-  return !loading ? (
-   
-      <div className='layout'>
-        <Header />
-        
-         <Outlet />
-       
-        {/* <Footer /> */}
-      </div>
-   
-  ) : null
+ 
+  return(
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/blogs' element={<Blogs/>}/>
+
+    </Routes>
+  )
 }
 
 export default App

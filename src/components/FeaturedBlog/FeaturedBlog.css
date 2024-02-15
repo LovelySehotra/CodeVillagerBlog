@@ -43,7 +43,7 @@
     -webkit-line-clamp: 6;
     -webkit-box-orient: vertical;
 }
-@media screen and (width<500px) {
+@media screen and (width<580px) {
     .featured-blog{
         margin-block-start: 5rem;
         inline-size:100%;

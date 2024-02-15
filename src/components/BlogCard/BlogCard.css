@@ -43,7 +43,7 @@
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
 }
-@media screen and (width<=500px) {
+@media screen and (width<=580px) {
   .blog-detail {
     display: flex;
    flex-direction: column;
@@ -51,7 +51,7 @@
    inline-size: 100%;
    max-inline-size: 500px;
    block-size: max-content;
-   max-block-size: 500px;
+   max-block-size: 520px;
   }
   .blog-content .content-title {
     font-size: large;

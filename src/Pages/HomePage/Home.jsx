@@ -6,6 +6,7 @@ import FeaturedBlog from '../../components/FeaturedBlog/FeaturedBlog';
 import BlogCard from '../../components/BlogCard/BlogCard';
 import "./Home.css"
 import About from '../About/About';
+import HomeLayout from '../../Layout/HomeLayout';
 function Home() {
     const [posts, setPosts] = useState([])
     useEffect(() => {
@@ -18,6 +19,7 @@ function Home() {
 
     return (
         // posts.length == 0 ?
+        <HomeLayout>
         <div className="homepage">
             <Container>
                 <FeaturedBlog />
@@ -40,6 +42,7 @@ function Home() {
 
             </Container>
         </div>
+        </HomeLayout>
         // :<div className='w-full py-8'>
         // <Container>
         //     <div className='flex flex-wrap'>

@@ -1,5 +1,5 @@
 .about-component{
-    padding-inline: 2rem;
+    padding-inline: 5=2%;
     inline-size: 100%;
     margin-inline: auto;
     font-weight: 300;
@@ -15,7 +15,7 @@
 .about-article p{
     margin-block: 2rem;
 }
-@media screen and (width<=500px) {
+@media screen and (width<=580px) {
     .about-component{
         padding-inline: 0;
         inline-size: 100%;

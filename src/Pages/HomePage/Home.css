@@ -17,6 +17,7 @@
   margin-inline: auto;
   display: grid;
   grid-template-columns: 2fr 1.5fr;
+  gap: 10px;
 }
 .blogcard {
   display: grid;
@@ -31,7 +32,7 @@
   border-left: 1px solid black;
   padding-inline: 5vw;
 }
-@media screen and (width<500px) {
+@media screen and (width<580px) {
   .blogcard-section {
     display: grid;
     grid-template-columns: 100%;
