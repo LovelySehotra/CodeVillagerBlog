@@ -4,7 +4,7 @@ import './App.css'
 import authService from "./appwrite/auth"
 import {login, logout} from "./store/authSlice"
 
-import { Footer, Header } from './components'
+import { Footer, Header, Signup } from './components'
 import { Outlet, Route, Routes } from 'react-router-dom'
 import { Editor } from '@tinymce/tinymce-react'
 import Blogs from './Pages/Blogs/Blogs'
@@ -38,6 +38,7 @@ function App() {
       <Route path='/all-posts' element={<Blogs/>}/>
       <Route path='/about' element={<AboutPage/>}/>
       <Route path='/login' element={<Login/>}/>
+      <Route path='/signup' element={<Signup/>}/>
       <Route path='/add-post' element={<AddPost/>}/>
       <Route path='/blog/:id' element={<SingleBlogPage/>}/>
 
