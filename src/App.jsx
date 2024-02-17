@@ -13,6 +13,7 @@ import Home from './Pages/HomePage/Home'
 import AboutPage from './Pages/AboutPage/AboutPage'
 import Login from './Pages/Login/Login.jsx'
 import SingleBlogPage from './Pages/SingleBlogPage/SingleBlogPage'
+import AddPost from './Pages/AddPost/AddPost'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -37,6 +38,7 @@ function App() {
       <Route path='/all-posts' element={<Blogs/>}/>
       <Route path='/about' element={<AboutPage/>}/>
       <Route path='/login' element={<Login/>}/>
+      <Route path='/add-post' element={<AddPost/>}/>
       <Route path='/blog/:id' element={<SingleBlogPage/>}/>
 
     </Routes>
