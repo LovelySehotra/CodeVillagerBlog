@@ -18,18 +18,14 @@ function Header() {
             slug: "/",
             active: true
         },
-        // {
-        //     name: 'Login',
-        //     slug: "/login",
-        //     active: !authStatus
-        // },
+       
         // {
         //     name: 'Signup',
         //     slug: "/signup",
         //     active: !authStatus,
         // },
         {
-            name: 'Blog',
+            name: 'All Blog',
             slug: "/all-posts",
             active: true,
         },
@@ -42,6 +38,11 @@ function Header() {
             name: 'About',
             slug: "/about",
             active: true,
+        },
+        {
+            name: 'Login',
+            slug: "/login",
+            active: !authStatus
         }
     ]
     return (

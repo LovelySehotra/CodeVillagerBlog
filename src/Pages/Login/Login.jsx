@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import {Link, useNavigate } from 'react-router-dom'
 import {useForm} from'react-hook-form';
-import {Button,Input,Logo} from "./index"
-import authService from "../appwrite/auth";
-import {login as authLogin} from '../store/authSlice'
+import {Button,Input,Logo} from "../../components/index"
+import authService from "../../appwrite/auth";
+import {login as authLogin} from '../../store/authSlice'
+import HomeLayout from '../../Layout/HomeLayout';
 
 function Login() {
     const [error ,setError] =useState("");
@@ -27,7 +28,9 @@ function Login() {
     }
 
   return (
-    <div className='flex items-center justify-center w-full'>
+    <HomeLayout>
+
+    <div className='flex items-center justify-center w-full mt-20'>
         <div className={`mx-auto w-full max-w-lg bg-gray-100 rounded-xl p-10 border border-black/10`}>
         <div className="mb-2 flex justify-center">
                     <span className="inline-block w-full max-w-[100px]">
@@ -78,6 +81,7 @@ function Login() {
         </div>
 
     </div>
+    </HomeLayout>
   )
 }
 

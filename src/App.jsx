@@ -9,9 +9,9 @@ import { Outlet, Route, Routes } from 'react-router-dom'
 import { Editor } from '@tinymce/tinymce-react'
 import Blogs from './Pages/Blogs/Blogs'
 import Home from './Pages/HomePage/Home'
-import About from './components/About/About'
+
 import AboutPage from './Pages/AboutPage/AboutPage'
-import SingleBlog from './components/SingleBlog/SingleBlog'
+import Login from './Pages/Login/Login.jsx'
 import SingleBlogPage from './Pages/SingleBlogPage/SingleBlogPage'
 
 function App() {
@@ -36,6 +36,7 @@ function App() {
       <Route path='/' element={<Home/>}/>
       <Route path='/all-posts' element={<Blogs/>}/>
       <Route path='/about' element={<AboutPage/>}/>
+      <Route path='/login' element={<Login/>}/>
       <Route path='/blog/:id' element={<SingleBlogPage/>}/>
 
     </Routes>

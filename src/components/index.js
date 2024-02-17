@@ -1,6 +1,5 @@
 import Header from "./Header/Header"
 import Footer from "./Footer/Footer"
-import Login from "./Login"
 import Signup from "./Signup"
 import LogoutBtn from "./LogoutBtn"
 import Input from "./Input"
@@ -16,7 +15,6 @@ import Select from "./Select"
 export {
     Header,
     Footer,
-    Login,
     LogoutBtn,
     Input,
     Button,

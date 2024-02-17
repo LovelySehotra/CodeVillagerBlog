@@ -6,7 +6,7 @@ import { BrowserRouter, RouterProvider, createBrowserRouter } from 'react-router
 import store from "./store/store.js"
 import { AuthLayout} from './components/index.js'
 import Signup from "./Pages/Signup.jsx";
-import Login from './Pages/Login.jsx'
+// import Login from './Pages/Login.jsx'
 import Home from './Pages/HomePage/Home.jsx'
 import AddPost from "./Pages/AddPost.jsx"
 import AllPosts from './Pages/AllPost.jsx'

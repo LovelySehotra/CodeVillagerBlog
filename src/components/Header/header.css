@@ -27,7 +27,7 @@
 .menu {
   block-size: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
   border: none;
   /* background-color: aqua; */
 }
