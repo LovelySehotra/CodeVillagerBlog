@@ -11,6 +11,8 @@ import Blogs from './Pages/Blogs/Blogs'
 import Home from './Pages/HomePage/Home'
 import About from './components/About/About'
 import AboutPage from './Pages/AboutPage/AboutPage'
+import SingleBlog from './components/SingleBlog/SingleBlog'
+import SingleBlogPage from './Pages/SingleBlogPage/SingleBlogPage'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -34,6 +36,7 @@ function App() {
       <Route path='/' element={<Home/>}/>
       <Route path='/all-posts' element={<Blogs/>}/>
       <Route path='/about' element={<AboutPage/>}/>
+      <Route path='/blog/:id' element={<SingleBlogPage/>}/>
 
     </Routes>
   )

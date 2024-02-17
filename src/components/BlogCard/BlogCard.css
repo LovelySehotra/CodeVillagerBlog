@@ -1,7 +1,8 @@
 .blog-detail {
   display: flex;
   text-align: start;
-  inline-size: 55vw;
+  inline-size: 100%;
+  /* inline-size: 55vw; */
   max-inline-size: 575px;
   block-size: 350px;
   border: 1px solid black;
@@ -47,7 +48,8 @@
   display: flex;
   flex-direction: column;
   text-align: start;
-  inline-size: 48%;
+  inline-size: 100%;
+  /* inline-size: 48%; */
   block-size: max-content;
   max-inline-size: 500px;
   border: 1px solid black;
