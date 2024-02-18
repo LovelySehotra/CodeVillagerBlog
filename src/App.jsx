@@ -6,10 +6,10 @@ import {login, logout} from "./store/authSlice"
 
 import { Footer, Header, Signup } from './components'
 import { Outlet, Route, Routes } from 'react-router-dom'
-import { Editor } from '@tinymce/tinymce-react'
+
 import Blogs from './Pages/Blogs/Blogs'
 import Home from './Pages/HomePage/Home'
-
+import Editor from './Pages/Editor/Editor.jsx'
 import AboutPage from './Pages/AboutPage/AboutPage'
 import Login from './Pages/Login/Login.jsx'
 import SingleBlogPage from './Pages/SingleBlogPage/SingleBlogPage'
@@ -40,6 +40,7 @@ function App() {
       <Route path='/login' element={<Login/>}/>
       <Route path='/signup' element={<Signup/>}/>
       <Route path='/add-post' element={<AddPost/>}/>
+      <Route path='/editor' element={<Editor/>}/>
       <Route path='/blog/:id' element={<SingleBlogPage/>}/>
 
     </Routes>
